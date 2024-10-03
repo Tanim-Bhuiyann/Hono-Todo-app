@@ -87,7 +87,7 @@ app.delete("/todos/:id", async (c) => {
   return c.json({ message: "Todo deleted" });
 });
 
-app.get("/todos", (c) => {
+app.get("/todos/", (c) => {
   return c.json(todos);
 });
 
